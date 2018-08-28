@@ -7,6 +7,7 @@ function add_styles_scripts() {
 	wp_enqueue_style( 'bootstrap_style', get_stylesheet_directory_uri() . '/assets/css/bootstrap.min.css' );
 	wp_enqueue_style( 'animate_style', get_stylesheet_directory_uri() . '/assets/css/animate.css' );
 	wp_enqueue_style( 'owl_style', get_stylesheet_directory_uri() . '/assets/css/owl.carousel.min.css' );
+	wp_enqueue_style( 'owl_efault', get_stylesheet_directory_uri() . '/assets/css/owl.theme.default.min.css' );
 	wp_enqueue_style( 'custom_style', get_stylesheet_directory_uri() . '/assets/css/my-style.css' );
 	wp_enqueue_script( 'scrolling-nav', get_stylesheet_directory_uri() . '/assets/js/scrolling-nav.js', '', '', true );
 
@@ -37,6 +38,7 @@ function twentyseventeen_child_setup() {
 	
 	//Define Image Sizes
 	add_image_size( 'service-size', 460, 220, true );
+	add_image_size( 'portfolio-size', 365, 300, true );
 }
 
 function override_mce_options( $initArray ) {

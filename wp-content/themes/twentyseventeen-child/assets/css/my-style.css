@@ -1,6 +1,12 @@
 
 /**************Subnavbar*********/
-
+h2{
+	margin:0;
+	padding:0;
+}
+button:hover, button:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="submit"]:hover, input[type="submit"]:focus {
+    background: transparent;
+}
 header {
     width: 100%;
     height: auto;
@@ -207,8 +213,8 @@ div#mobile-nav .panel-group {
     color: #fff;
     font-weight: 700;
     text-transform: uppercase;
-    font-family: ITC-Officina-Serif-Std-Bold;
-    border-top: none;
+    font-family: ITC-Officina-Sans-Std-Book;
+    border-top: 4px solid transparent;
 }
 
 #wrapper .navbar-fixed-top.top-nav-collapse .navbar-header a.navbar-brand {
@@ -435,7 +441,7 @@ section.home-banner {
 
 .service-section .text-column .text {
     position: relative;
-    margin-bottom: 50px;
+    /*margin-bottom: 50px;*/
 }
 
 .service-section .text-column .theme-title span {
@@ -603,7 +609,7 @@ section.home-banner {
 
 .service-section .image-column {
     position: relative;
-    margin-bottom: 30px;
+    /*margin-bottom: 30px;*/
     width: 100%;
     height: 100%;
     display: inline-block;
@@ -651,6 +657,7 @@ section.grid-section .grid-layout {
 section.grid-section h2.text-center {
     margin-bottom: 35px;    
     margin-top: 0px;
+	text-transform:Uppercase;
 }
 
 section.grid-section .grid-layout .img-grid{
@@ -1276,9 +1283,9 @@ section.testimonial-section h2{
     z-index: 11;
     overflow: initial;
     border: 1px solid #eee;
-    -webkit-box-shadow: 0 10px 5px rgba(0,0,0,.03),0 -px 10px rgba(0,0,0,.03);
+   /* -webkit-box-shadow: 0 10px 5px rgba(0,0,0,.03),0 -px 10px rgba(0,0,0,.03);
     -moz-box-shadow: 0 10px 5px rgba(0,0,0,.03),0 -6px 10px rgba(0,0,0,.03);
-    box-shadow: 0 8px 5px rgba(0,0,0,.03), 0 -3px 5px rgba(0,0,0,.03);
+    box-shadow: 0 8px 5px rgba(0,0,0,.03), 0 -3px 5px rgba(0,0,0,.03);*/
     -webkit-transition: .3s all ease;
     transition: .3s all ease;
     text-align: center;
@@ -1387,9 +1394,9 @@ section.testimonial-section h2{
     }
     ul li a {
         -webkit-transition: all 0.5s ease;
-       /* -ms-transition: all 0.5s ease;
+        */ -ms-transition: all 0.5s ease;
         -o-transition: all 0.5s ease;
-        -moz-transition: all 0.5s ease;     */   
+        -moz-transition: all 0.5s ease;        
     }
     #wrapper header nav#header div#main-nav ul li:hover a,
     #wrapper header nav#header div#main-nav ul li a:hover,
@@ -1403,7 +1410,6 @@ section.testimonial-section h2{
         -o-transition: all 0.5s ease;
         transition: all 0.5s ease;
         outline: 0;
-        color: #3e66a6;
     }
 
     #wrapper header .header.navbar-fixed-top.top-nav-collapse nav#header div#main-nav ul li:hover a{
@@ -1586,6 +1592,7 @@ section.testimonial-section h2{
     #wrapper header nav#header {
         background: transparent;
         min-height: auto;
+		    height: auto;
     }
     .navbar-fixed-top {
         background: #FFF;
